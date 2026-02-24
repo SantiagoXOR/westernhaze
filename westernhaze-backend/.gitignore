@@ -1,0 +1,9 @@
+# Entorno y secretos (nunca subir)
+.env
+.venv/
+venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.coverage
+htmlcov/
