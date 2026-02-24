@@ -10,3 +10,9 @@ Thumbs.db
 
 # Plan/scratch (opcional)
 *.plan.md
+
+# Backend / API (Vercel usa env en dashboard)
+backend/.env
+.env
+__pycache__/
+*.pyc

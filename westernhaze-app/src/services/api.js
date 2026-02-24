@@ -1,4 +1,5 @@
-const API_BASE = process.env.EXPO_PUBLIC_API_URL || "http://localhost:8000";
+// En Vercel: misma origen, usar "" para que las peticiones vayan a /api/*. Local: backend en 8000.
+const API_BASE = process.env.EXPO_PUBLIC_API_URL ?? "";
 
 export async function analyzeScan({ userId, imageUrl, growthStage }) {
   const res = await fetch(`${API_BASE}/api/analyze-scan`, {
